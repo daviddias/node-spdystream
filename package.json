@@ -1,8 +1,8 @@
 {
-  "name": "node-spdystream",
-  "version": "1.0.0",
+  "name": "spdystream",
+  "version": "0.1.0",
   "description": "Implementation of the framing layer of the SPDY protocol, exposing a streamable interface",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "codestyle": "./node_modules/.bin/standard --format",
     "test-cov": "node ./node_modules/.bin/lab -t 85 tests/*-test.js",
@@ -27,5 +27,8 @@
     "code": "^1.4.0",
     "lab": "^5.10.0",
     "standard": "^4.2.1"
+  },
+  "dependencies": {
+    "async-buffered-reader": "^1.2.0"
   }
 }
